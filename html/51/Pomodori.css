@@ -1,0 +1,31 @@
+a href {color: blue;}
+header{
+    border: 150 pix solid black;
+    background-color: red;
+    color: black;
+    width: 55 pix;
+    text-align: center;
+    border-radius: 60;
+    margin-bottom: 1em;
+}
+
+
+a:visited {
+  color: lightgray;
+}
+
+a:hover {
+  transform : scale (1.5);
+  cursor:grab;
+  text-decoration: underline;
+}
+ ul {
+        list-style-type: decimal;
+        font-style: normal;
+        display: inline-block;
+      }
+      .sides{text-decoration: solid;}
+      .image :hover {scale: 1.5;}
+      .image {display: inline-block;
+        position:relative };
+      
