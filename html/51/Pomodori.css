@@ -1,5 +1,6 @@
 a href {color: blue;}
 header{
+    top: 0;
     border: 150 pix solid black;
     background-color: red;
     color: black;
