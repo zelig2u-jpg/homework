@@ -18,7 +18,7 @@
         <p>
  <style>p {font-family:Medula One; 
            }
-          html {width: 80%; @media (width <500 pix) {
+          html {width: 80%; @media (max-width: 800px ) {width: 100%;
             
           }}
 </style>
@@ -32,7 +32,7 @@
     </header>
      
        <body> 
-            <audio controls loop autoplay>
+            <audio loop autoplay>
           <source src="media/backhome.mp3" type="audio/mpeg" />
     </audio>
         <style> 
@@ -44,14 +44,19 @@
           background-image: url("images/brickwallbckrng.jpg");
           background-size:cover;
            background-repeat: no-repeat;
-           min-height: 100%;
+           min-height: 120%;
         }     
       </style> 
+      <video src="media\pizzavideo.mp4" controls autoplay loop ></video>
+          <style> body video {width: 100%; @media (max-width: 800px ) {width: 100%;}
+
+          </style>
      
 
      
-</body>
+ </body>
 
-          <video src="" controls xautoplay loop ></video>
+          
+
 
 </html>
