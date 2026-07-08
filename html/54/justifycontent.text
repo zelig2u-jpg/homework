@@ -1,0 +1,24 @@
+justify-content:flex-end;
+justify-content:center
+justify-content: space-around
+justify-content:space-between
+align-items:flex-end
+justify-content:center;align-items:center
+justify-content:space-around;align-items:end
+flex-direction:row-reverse
+flex-direction:column
+flex-direction:row-reverse;justify-content:start
+flex-direction:column;justify-content:end
+flex-direction:column-reverse; justify-content:space-between
+flex-direction:row-reverse;  justify-content:center; align-items:end
+order:1
+order:-1
+align-self:end
+order:1; align-self:end
+flex-wrap:wrap
+flex-direction:column;flex-wrap:wrap
+flex-flow:column wrap
+align-content:flex-start
+align-content:flex-end
+flex-direction:column-reverse; align-content:center
+flex-direction:column-reverse;align-items:end;flex-wrap:wrap-reverse;justify-content:center;align-content:space-between
