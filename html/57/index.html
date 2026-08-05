@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTUFF</title>
+</head>
+<style>
+    html{font-family: Arial, Helvetica, Arial, sans-serif;
+     }
+    nav, footer{ 
+      position: fixed;
+        width: 100%;
+        background-color: black;
+        color: white;
+        padding-left: 7.5%;
+        
+     }
+     nav{top: 0;}
+     footer{padding-left: 10%; height: 35px;}
+     #nav:hover{color: red; text-decoration: underline;}
+     
+
+     body{
+    padding-top: 5px; 
+    
+  margin-bottom: 25px; }
+    
+     ul{display: flex;
+      flex-direction: row;
+      gap: 1rem;
+    list-style: none;}
+    
+     header{margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 35px;
+      background-color: gray;
+        text-align: center;
+        font-weight: bolder;
+        font-size: x-large;
+
+    padding-top: 100px;
+padding-bottom: 100px;
+border-radius: 3px;}
+#PCS{font-style: italic;}
+
+#Products {left: 0%;right: 0%; margin-left: 10%; margin-right: 10%;font-weight: bolder; line-height: 2;font-size: larger;}
+#Financials {left: 0%;right: 0%; margin-left: 10%; margin-right: 10%;font-weight: bolder; line-height: 2;font-size: larger;}
+#About {left: 0%;right: 0%; margin-left: 10%; margin-right: 10%;font-weight: bolder; line-height: 2;font-size: larger;}
+#Sign {left: 0%;right: 0%; margin-left: 10%; margin-right: 10%;font-weight: bolder; line-height: 2;font-size: larger;}
+caption{left: 0%;right: 0%; margin-left: 10%; margin-right: 10%;font-weight: bolder; line-height: 2;font-size: larger;}
+ 
+div{left: 0%;right: 0%; margin-left: 10%; margin-right: 10%;}
+
+     footer{bottom: 0;}
+     p{font-weight: bolder; font-size: larger; text-align: center;}
+    
+     .pics  { right: 10%; display: flex; gap: 16px; justify-content: space-between; margin-right: 10% ;  }
+     
+#candypic{max-width: 100%;}
+#computerpic{max-width: 100%;}  
+#choirpic{max-width: 100%;}   
+     .pics {min-width: 0;}
+     
+     
+     
+     
+
+     form{background-color: grey;padding: 50px;
+      left: 0%;right: 0%; margin-left: 10%; margin-right: 10%;
+      text-align: center;
+      border-radius: 3px;
+            
+    }
+          
+
+
+     a{color: white; text-decoration: none ;}
+     a:hover{color: red; text-decoration: underline;}
+     table{overflow: scroll; border: 1px solid black; border-collapse: collapse;margin-left: 25%;margin-right: 10%;}
+     
+   @media(min-width:801px) {#candy, #choirs{border-left: 3px solid lightgrey; margin-bottom: 20px; padding-left: 20px;}
+    
+   } 
+    @media (max-width: 1000px) {
+  form { display: flex;  align-items: center; flex-wrap: wrap;  padding-left: 22%;}
+  form { margin-bottom: 0; }
+  button{display: block;  margin-left: 35%;}
+}
+
+@media (max-width: 800px){
+  .pics{ display: flex;  align-items: center; flex-wrap: wrap; }
+.container{
+display: block;
+  overflow-x: scroll;
+  margin-left: 10%;
+  
+}}
+.inputs{ border: 1px solid black; border-radius:5px;
+  box-shadow: 5px 5px 1px #000;}
+
+     th, td, tfoot{
+        border: 1px solid black;
+      }
+      th {
+        font-weight: bold;
+      }
+      td{text-align: right;}
+      tbody tr:nth-child(even) {
+        background-color:  aliceblue
+      }
+      tr:hover {background-color: blue;}
+      tbody tr:nth-child(even):hover{background-color: blue;}
+      .total{color: red;}
+      .Year
+        {font-weight: bold;
+      }
+
+
+      
+      
+     
+</style>
+
+<nav>
+     <ul>  
+       <li><a href="#Products">Products</a> </li> 
+       <li><a href="#Sign">Sign Up</a></li>
+       <li><a href="#Financials">Financials</a></li>
+       <li><a href="#About">About Us</a></li></ul></nav>
+
+
+       
+<body>
+  
+   <header> 
+        ESTUFF
+         <div>A <span id="PCS">PCS </span>company </div>
+       </header>
+       <span id=Products>Products</span> 
+<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis alias neque obcaecati. Illo ipsum, pariatur error inventore obcaecati iste sit, voluptates laborum, incidunt officiis non corporis reiciendis. Porro, corporis sapiente?</div>
+<div class="pics">
+    <span id="computers"><p>Computers </p><img src="media\macworld.jpg" alt="" id="computerpic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto officiis illo sed aspernatur soluta sunt eum laborum, dolorum sapiente iure, ipsa, quidem ab inventore odit consequatur. Enim eum iste sint. </span>
+    <span id="choirs"><p id="ch">Choirs</p><img src="media\shira.png" alt="" id="choirpic"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, obcaecati? Consectetur tempore dolor id ea sit officiis excepturi, consequuntur officia ex, cupiditate sunt! Deleniti non eum iusto totam voluptatum esse. </span>
+    <span id="candy"><p id="c">Candy</p><img src="media\candy.png" alt="" id="candypic">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente quibusdam nulla dolor inventore itaque earum, velit quidem eveniet quae consequuntur non. Alias, impedit? Temporibus molestiae omnis id incidunt aliquam libero.</span>
+</div>
+<form action="submit" >
+     <div id="Sign">Sign Me Up!</div>
+       <label>
+        
+        Name:
+        <input name="Your Name" minlength="3" maxlength="20" placeholder="Your Name" class="inputs"/>
+      </label>
+      <label>
+        Email:
+        <input name="Your Email" minlength="3" maxlength="20" placeholder="Your Email"  input type="email" class="inputs"/>
+        <button type="submit" >Sign Me Up!</button>
+        
+      </label>
+       
+    </form>
+<span id="Financials">Financials</span>
+<div >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad voluptates optio excepturi quod nihil quis vero inventore sit et iusto consectetur, laudantium itaque iure nulla adipisci fugit possimus. Non, soluta.</div>
+
+<table class="container">
+  <caption>
+        Profits - By Quarter
+      </caption>
+    <thead>
+        <tr>
+          <th>Year</th>
+          <th>First Quater Profile</th>
+          <th>Second Quater Profile</th>
+          <th>Third Quater Profile</th>
+          <th>Fourth Quater Profile</th>
+          <th>Total</th>
+    </thead>
+     <tbody>
+        <tr class="odd">
+          <td class="Year">2012</td>
+          <td>$1254564.32</td>
+          <td>$1154545.67</td>
+          <td>$1236566.98</td>
+          <td>$1368546.32</td>
+          <td class="total">$5050934.29</td>
+        </tr>
+         <tr class="even">
+          <td class="Year">2013</td>
+          <td>$1385475.87</td>
+          <td>$1485690.23</td>
+          <td>$1365568.54</td>
+          <td>$1545435.11</td>
+          <td class="total">$5623344.75</td>
+        </tr>
+
+         <tr class="odd">
+          <td class="Year">2014</td>
+          <td>$1589878.76</td>
+          <td>$1698986,45</td>
+          <td>$1645456.32</td>
+          <td>$1789890.35</td>
+          <td class="total">$6545657.88</td>
+        </tr>
+
+         <tr class="even">
+          <td class="Year">2015</td>
+          <td>$1889776.22</td>
+          <td>$1854565.71</td>
+          <td>NA</td>
+          <td>NA</td>
+          <td class="total">$3654654.93</td>
+        </tr>
+    </tbody> 
+    <tfoot>
+      <tr>
+      <td colspan="5">Total</td> 
+      <td class="total">$20978798.85</td>
+      </tr>
+    </tfoot>
+    
+</table>
+ <span id="About">About Us</span>
+ <div >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet facilis voluptatum porro eaque, expedita reiciendis omnis veniam qui iure laboriosam accusantium libero a enim, recusandae maxime odio quasi natus officiis atque error minus vel. Provident possimus sequi quas minima nisi, ea optio rerum voluptatum illum neque praesentium ad incidunt perferendis reprehenderit impedit eligendi recusandae porro unde quibusdam! Asperiores quas nemo voluptate ratione neque nobis facere, quisquam nihil ab magnam vitae. Itaque consectetur aperiam placeat accusamus ab, eligendi aliquam repellendus ut officiis. Ab, similique. Voluptatibus iure, esse officiis commodi illum, odit tempore eveniet optio voluptatem voluptates minima nobis minus nulla voluptas enim harum aliquid? Rerum distinctio corrupti voluptas corporis omnis? Blanditiis quae est dolorem, dicta voluptate vero tempora magni explicabo? Reprehenderit maxime libero veritatis aut possimus obcaecati eaque? Officiis deserunt necessitatibus recusandae error ratione unde tempora expedita quas ea maxime. Nihil nobis laudantium, optio minus delectus quae modi similique error debitis itaque quam excepturi sint labore, pariatur et repudiandae quos doloremque eos! Nisi at ab nesciunt aliquam numquam alias sit quis voluptatibus fugiat natus fuga perspiciatis doloremque unde expedita voluptas, distinctio dicta sapiente ad. Voluptatem, nobis. Ipsam adipisci officiis ea non, debitis blanditiis, optio assumenda tempora voluptate, consequuntur hic dicta. Adipisci mollitia natus cupiditate fugit blanditiis eos nesciunt atque rerum officia quod incidunt quos ipsa sequi possimus provident totam, maxime labore minus magni. Exercitationem, vitae doloremque? Cum pariatur natus corrupti similique, dolorem sint necessitatibus, ea itaque voluptate, distinctio quod? Illum labore repudiandae ratione laboriosam rem delectus sunt saepe pariatur, architecto mollitia consequatur quos placeat cupiditate. Cum necessitatibus aliquid voluptatum dignissimos labore, impedit magnam quas et provident quasi, consequatur quisquam veritatis autem laboriosam fuga placeat tempora ratione quos iusto dolorem repudiandae excepturi magni soluta dolores. Nulla, officia consequuntur corporis culpa recusandae et quibusdam iusto amet quisquam vero. Atque cum, veritatis praesentium repellat fuga porro quas animi architecto id? Nemo id sed consequatur. Sint vel, iusto in corrupti aliquam ut quidem officiis culpa quo fugit fugiat tempore? Adipisci consectetur, obcaecati magnam ratione recusandae eos suscipit officia quibusdam hic autem ipsum debitis saepe pariatur cupiditate! Veniam laborum, eaque ea dignissimos aspernatur accusantium nulla ipsa placeat saepe quaerat, error quod autem ab sequi excepturi expedita, molestias aliquid distinctio delectus quae! Alias beatae maiores, quam, exercitationem molestias omnis ducimus animi illo cum voluptas veniam consequuntur sint architecto aliquam placeat facilis corrupti sunt, doloremque numquam nulla. Aspernatur libero voluptatum culpa dolores maxime! Consectetur sunt neque repudiandae dolore ipsam nesciunt totam dolores eveniet nostrum eos amet consequatur, minus distinctio reprehenderit nihil perferendis pariatur commodi numquam quisquam sequi provident. Tempora tempore exercitationem recusandae illum suscipit quisquam, omnis, est debitis magnam ad optio praesentium maiores totam nihil tenetur? Molestias deleniti minus nemo in aperiam nihil quae, officiis nam, numquam illo magni aliquam cum? Eaque dicta, error at ea iusto ducimus odit, aperiam natus tenetur nobis, consequatur incidunt earum optio adipisci similique sunt facilis est aliquam assumenda voluptates animi corrupti provident. Impedit sequi aliquid tempore magnam necessitatibus numquam ut molestias vitae assumenda? Excepturi ratione doloremque atque quod. Error officia ut quis!</div>
+</body>
+
+<footer>&#169 PCS 2019</footer>
+</html>
