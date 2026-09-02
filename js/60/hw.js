@@ -15,11 +15,11 @@ function trackDosage(medicationName, initialDosage) {
     }
   }
 
-  // return the helper functions if you want to call them from outside
+  
   return { getInstructions, adjustDosage, getDosage: () => dosage };
 }
 
 const meds = trackDosage('acetaminophen', 5);
-meds.getInstructions(); // prints: take 5ml
+meds.getInstructions();
 meds.adjustDosage(1234, 10);
-console.log(meds.getDosage()); // 10
+console.log(meds.getDosage()); 
