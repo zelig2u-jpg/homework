@@ -1,0 +1,37 @@
+[
+  {
+    "id": "Cholent",
+    "name": "Cholent",
+    "ingredients": [
+      "5 pounds beef",
+      "2 cups barley",
+      "2 large onions",
+      "2 teaspoons salt"
+    ],
+    "image": "images/classiccholent.jpg"
+  },
+  {
+    "id": "Potato Kugel",
+    "name": "Potato Kugel",
+    "ingredients": [
+      "5 pounds potatoes",
+      "2 whole large onions",
+      "6 eggs",
+      "2 teaspoons salt",
+      "1/2 teaspoon black pepper"
+    ],
+    "image": "images/potatokugel.jpg"
+  },
+  {
+    "id": "Spinach kugel",
+    "name": "Spinach Kugel",
+    "ingredients": [
+      "5 pounds spinach",
+      "2 whole large onions",
+      "6 eggs",
+      "2 teaspoons salt",
+      "1/2 teaspoon black pepper"
+    ],
+    "image": "images/Sppinachkugel.jpg"
+  }
+]
