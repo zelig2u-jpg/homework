@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Map + GeoNames Example</title>
+    <style>
+      html,body,#map { width:100%;height:100%;margin:0;padding:0; }
+      #form, #clear-recent {
+        position: absolute; top: 12px; left: 12px; z-index: 1000;
+        background: rgba(255,255,255,0.95); padding: 8px; border-radius: 6px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      }
+      #clear-recent { left: auto; right: 12px; top: 12px; }
+      .map-icon { width:64px; height:auto; display:block; }
+      #sidebar {
+        position:absolute; right:12px; top:12px; z-index:1000;
+        background:#fff; padding:8px; border-radius:6px; max-width:320px;
+        max-height:70vh; overflow:auto;
+      }
+      #places { list-style:none; padding:0; margin:0; }
+      #places li { margin-bottom:8px; border-bottom:1px solid #eee; padding-bottom:6px; }
+      .summary { font-size: 0.9rem; color:#333; margin-top:4px; }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <form id="form" action="#" method="get" role="search" aria-label="Site search">
+      <input id="search" name="q" type="search" placeholder="Search..." aria-label="Search query" />
+      <button type="submit">Search</button>
+    </form>
+
+    <button id="clear-recent" title="Clear recent searches">Clear Recent</button>
+
+    <div id="sidebar"><ul id="places"></ul></div>
+
+    <!-- Minimal Google Maps loader helper (keeps the async importLibrary pattern) -->
+    <script>
+      (function(g){
+        var h,a,k,p='The Google Maps JavaScript API',c='google',l='importLibrary',q='__ib__',m=document,b=window;
+        b = b[c] || (b[c] = {});
+        var d = b.maps || (b.maps = {}), r = new Set(), e = new URLSearchParams();
+        var u = () => h || (h = new Promise(async (f,n) => {
+          a = m.createElement('script');
+          e.set('key', g.key);
+          e.set('v', g.v || 'weekly');
+          e.set('callback', c + '.maps.' + q);
+          a.src = `https://maps.${c}apis.com/maps/api/js?` + e;
+          d[q] = f;
+          a.onerror = () => (h = n(Error(p + ' could not load.')));
+          a.nonce = m.querySelector('script[nonce]')?.nonce || '';
+          m.head.append(a);
+        }));
+        d[l] ? console.warn(p + ' only loads once. Ignoring:', g) : (d[l] = (f,...n) => r.add(f) && u().then(() => d[l](f,...n)));
+      })({ key: 'AIzaSyDAeV5HLgLpPcFmTQ1IC642ChCLDSmCojg', v: 'weekly' });
+    </script>
+
+    <!-- Application logic in separate module file -->
+    <script type="module" src="map.js"></script>
+  </body>
+</html>
