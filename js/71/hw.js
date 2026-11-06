@@ -27,9 +27,9 @@ function createPlane(color) {
   };
   return p;
 }
-ford = createVehicle("red");
+const ford = createVehicle("red");
 ford.go(50);
 ford.print();
-cessna = createPlane("white");
+const cessna = createPlane("white");
 cessna.go(200);
 cessna.print();

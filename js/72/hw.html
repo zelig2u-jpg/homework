@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+      }
+      #theCanvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+      <form id="theForm">
+      <label for="ballsize">Choose Size:</label>
+      <input type="number" id="ballsize" name="ballsize" value="100" />
+      <label for="newballcolor">Choose Color:</label>
+      <input type="color" id="newballcolor" name="newballcolor" value="black" />
+      
+      <button type="submit" id="addBallButton">Add Ball</button>
+    </form>
+    <canvas id="theCanvas"></canvas>
+
+    <script src="hw.js" type="module"></script>
+  </body>
+</html>
